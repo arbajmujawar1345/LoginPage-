@@ -1,0 +1,113 @@
+/* ===== RESET ===== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ===== BACKGROUND ===== */
+.bg, .auth-bg {
+  height: 100vh;
+  width: 100%;
+  background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1500382017468-9049fed747ef") no-repeat center/cover;
+
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  align-items: center;       /* vertical center */
+}
+
+/* ===== CARD (CENTER FIXED) ===== */
+.card, .auth-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 35px;
+  border-radius: 12px;
+  width: 340px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+  margin: 0; /* IMPORTANT for equal spacing */
+}
+
+/* ===== TITLE ===== */
+.card h1, .auth-card h2 {
+  color: #2e7d32;
+  margin-bottom: 5px;
+}
+
+/* ===== SUBTITLE ===== */
+.card h3, .auth-card p {
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* ===== INPUT ===== */
+input {
+  width: 100%;
+  margin: 8px 0 5px;
+  padding: 11px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: 0.3s;
+  box-sizing: border-box; /* IMPORTANT FIX */
+}
+
+/* Focus */
+input:focus {
+  border-color: #4caf50;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76,175,80,0.5);
+}
+
+/* ===== ERROR ===== */
+.error {
+  color: red;
+  font-size: 12px;
+  display: block;
+  text-align: left;
+  margin-bottom: 6px;
+}
+
+/* ===== BUTTON ===== */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  background: linear-gradient(45deg, #4caf50, #2e7d32);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover */
+button:hover {
+  background: linear-gradient(45deg, #2e7d32, #1b5e20);
+}
+
+/* ===== LINKS ===== */
+p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+a {
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 400px) {
+  .card, .auth-card {
+    width: 90%;
+    padding: 25px;
+  }
+}
